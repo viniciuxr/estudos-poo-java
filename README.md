@@ -1,2 +1,2 @@
 # estudos-poo-java
- Local destinado à meus estudos de Programação Orientada a Objeto em Java
+Aqui você encontrará meus avanços nos estudos de Programação Orientada a Objeto em Java
