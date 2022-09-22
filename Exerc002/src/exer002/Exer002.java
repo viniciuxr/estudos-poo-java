@@ -13,8 +13,13 @@ public class Exer002 {
 		palpite = input.nextInt();
 		String msg;
 		
+		/*int idade = 10;
+		if(idade>5 && idade<15); and
+		if(idade>5 || idade<15); or
+		if(!(idade>5)); not*/
+		
 		while(palpite != valorCorreto) {
-			msg = palpite>valorCorreto?"Um pouco menos...":"Um pouco mais";
+			msg = palpite>valorCorreto?"Um pouco menos...":"Um pouco mais"; //operado ternários pode substituir os ifs se a estrutura for essa
 			System.out.println(msg);
 			/*if(palpite>valorCorreto) {
 				System.out.println("Um pouco menos...");
