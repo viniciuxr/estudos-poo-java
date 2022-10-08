@@ -13,6 +13,19 @@ public class Cofrinho {
 	public void adicionar(Moeda moeda) {
 		this.listaMoedas.add(moeda);
 	}
+	
+	public void listagemMoedas() {
+		
+		if(this.listaMoedas.isEmpty()) {
+			System.out.println("Não existe nenhuma moeda no cofrinho");
+			return;
+		}
+		
+		for (Moeda moeda : this.listaMoedas) {
+			moeda.info();
+			
+		}
+	}
 
 }
 
