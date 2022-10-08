@@ -6,6 +6,13 @@ public class Real extends Moeda {
 		this.valor = valorInicial;
 	}
 	
+	public Real() {
+		
+	}
+	
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
 	public void info() {
 		System.out.println("Real - "+valor);
 	}
