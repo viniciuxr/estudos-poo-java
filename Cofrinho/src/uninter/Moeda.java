@@ -5,7 +5,7 @@ public abstract class Moeda {
 	protected double valor;
 
 	public abstract void info();
-	public abstract void converter();
+	public abstract double converter();
 	
 
 }
