@@ -1,12 +1,17 @@
 package uninter;
 
 public class Real extends Moeda {
-
+	
+	public Real(double valorInicial) {
+		this.valor = valorInicial;
+	}
+	
 	public void info() {
 		System.out.println("Real - "+valor);
 	}
 
-	public void converter() {
+	public double converter() {
+		return this.valor;
 		
 	}
 	
