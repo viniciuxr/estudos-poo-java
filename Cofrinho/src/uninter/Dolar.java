@@ -24,9 +24,9 @@ public class Dolar extends Moeda {
 			return false;
 		}
 		
-		Dolar objetoDeDolar = (Dolar) objeto;
+		Dolar objetoDeDol = (Dolar) objeto;
 		
-		if(this.valor != objetoDeDolar.valor) {
+		if(this.valor != objetoDeDol.valor) {
 			return false;
 		}
 		
