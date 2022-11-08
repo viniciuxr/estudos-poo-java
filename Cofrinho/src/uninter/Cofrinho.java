@@ -3,7 +3,7 @@ package uninter;
 import java.util.ArrayList;
 
 public class Cofrinho {
-	private ArrayList<Moeda> listaMoedas;
+	private ArrayList<Moeda> listaMoedas; 
 
 	public Cofrinho() {
 		this.listaMoedas = new ArrayList<>();
@@ -34,9 +34,15 @@ public class Cofrinho {
 	
 	
 		}
+		
 		double valorAcumulado = 0;
 		for (Moeda moeda : this.listaMoedas) {
 			valorAcumulado = valorAcumulado + moeda.converter();
+		}
+		
+		return valorAcumulado;
+		
+		
 			
 		}
 		
