@@ -7,15 +7,23 @@ public class Real extends Moeda {
 	}
 	
 	
-	
+	@Override
 	public void info() {
 		System.out.println("Real - "+valor);
 	}
-
+	
+	@Override
 	public double converter() {
 		return this.valor;
 		
 	}
+	
+	@Override
+	public boolean equals(Object objeto) {
+		return false;
+	}
+	
+	
 	
 	
 		
