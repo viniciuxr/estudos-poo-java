@@ -124,9 +124,15 @@ public class Menu {
 				exibirMenuPrincipal();
 			}
 			
-
+			boolean removeuMoeda = cofrinho.remover(moeda);
 		
-			cofrinho.remover(moeda);
+			if (removeuMoeda){
+				System.out.println("Moeda removida com sucesso!");
+			} else {
+				System.out.println("Não foi encontrada nenhuma moeda nesse valor!");
+			}
+			
+			
 			
 			
 			
