@@ -38,14 +38,18 @@ public class Menu {
 				exibirMenuPrincipal();
 				
 				break;
-			default:
-				System.out.println("Opção Inválida");
-				exibirMenuPrincipal();
-				break;
 				
 			case "4":
 				double valorTotalConvertido = cofrinho.totalConvertido();
-				System.out.println("Valor total convertido para real? "+valorTotalConvertido);
+				String valorTotalConvertidoTextual = String.format("%.2f", valorTotalConvertido);
+				valorTotalConvertidoTextual = valorTotalConvertidoTextual.replace(".", ",");
+				System.out.println("Valor total convertido para real? "+valorTotalConvertidoTextual);
+				exibirMenuPrincipal();
+				break;
+				
+			default:
+				System.out.println("Opção Inválida");
+				exibirMenuPrincipal();
 				break;
 		}
 	}
