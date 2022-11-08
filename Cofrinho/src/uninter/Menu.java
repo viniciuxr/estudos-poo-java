@@ -104,11 +104,11 @@ public class Menu {
 			
 			System.out.println("Digite o valor: ");
 			
-			String valorTextualMoeda = sc.next();
+			String valorTextoMoeda = sc.next();
 			
 			
-			valorTextualMoeda = valorTextualMoeda.replace(",", ".");
-			double valorMoeda = Double.valueOf(valorTextualMoeda);
+			valorTextoMoeda = valorTextoMoeda.replace(",", ".");
+			double valorMoeda = Double.valueOf(valorTextoMoeda);
 			
 			
 			Moeda moeda=null;
@@ -127,9 +127,9 @@ public class Menu {
 			boolean removeuMoeda = cofrinho.remover(moeda);
 		
 			if (removeuMoeda){
-				System.out.println("Moeda removida com sucesso!");
+				System.out.println("Moeda removida!");
 			} else {
-				System.out.println("Não foi encontrada nenhuma moeda nesse valor!");
+				System.out.println("Não foi encontrada nenhuma moeda com o valor indicado!");
 			}
 			
 			
