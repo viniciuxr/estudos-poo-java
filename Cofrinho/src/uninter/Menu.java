@@ -32,6 +32,9 @@ public class Menu {
 				exibirSubMenuAdicionarMoedas();
 				exibirMenuPrincipal();
 				
+			case"2":
+				exibirSubMenuRemoverMoedas();
+				exibirMenuPrincipal();
 				break;
 			case"3":
 				cofrinho.listagemMoedas();
@@ -91,4 +94,41 @@ public class Menu {
 		
 		
 	}
+	 private void exibirSubMenuRemoverMoedas() {
+			System.out.println("Escolha a moeda");
+			System.out.println("1-Real");
+			System.out.println("2-Dolar");
+			System.out.println("3-Euro: ");
+			
+			int opcaoMoeda = sc.nextInt();
+			
+			System.out.println("Digite o valor: ");
+			
+			String valorTextualMoeda = sc.next();
+			
+			
+			valorTextualMoeda = valorTextualMoeda.replace(",", ".");
+			double valorMoeda = Double.valueOf(valorTextualMoeda);
+			
+			
+			Moeda moeda=null;
+			
+			if (opcaoMoeda == 1) {
+				moeda = new Real (valorMoeda);
+			} else if(opcaoMoeda == 2) {
+				moeda = new Dolar (valorMoeda);
+			} else if(opcaoMoeda == 3 ) {
+				moeda = new Euro (valorMoeda);
+			}else {
+				System.out.println("Não existe essa moeda!");
+				exibirMenuPrincipal();
+			}
+			
+
+		
+			cofrinho.remover(moeda);
+			
+			
+			
+		}
 }
