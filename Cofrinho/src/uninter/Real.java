@@ -20,7 +20,18 @@ public class Real extends Moeda {
 	
 	@Override
 	public boolean equals(Object objeto) {
-		return false;
+		
+		if (this.getClass() != objeto.getClass()) {
+			return false;
+		}
+		
+		Real objetoDeReal = (Real) objeto;
+		
+		if(this.valor != objetoDeReal.valor) {
+			return false;
+		}
+		
+		return true;
 	}
 	
 	
