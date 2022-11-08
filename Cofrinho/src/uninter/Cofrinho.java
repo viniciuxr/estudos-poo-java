@@ -39,12 +39,12 @@ public class Cofrinho {
 	
 		}
 		
-		double valorAcumulado = 0;
+		double valorAmontoado = 0;
 		for (Moeda moeda : this.listaMoedas) {
-			valorAcumulado = valorAcumulado + moeda.converter();
+			valorAmontoado = valorAmontoado + moeda.converter();
 		}
 		
-		return valorAcumulado;
+		return valorAmontoado;
 				
 	}
 		
