@@ -26,6 +26,8 @@ public class Euro extends Moeda {
 		
 		Euro objetoDeEuro = (Euro) objeto;
 		
+		
+		
 		if(this.valor != objetoDeEuro.valor) {
 			return false;
 		}
