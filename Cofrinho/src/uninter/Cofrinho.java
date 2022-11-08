@@ -41,13 +41,9 @@ public class Cofrinho {
 		}
 		
 		return valorAcumulado;
-		
-		
-			
-		}
-		
-		return valorAcumulado;
-	
+				
 	}
+		
+	
 
 }
