@@ -14,7 +14,7 @@ public class Euro extends Moeda {
 
 
 	public double converter() {
-		return this.valor*5.07;
+		return this.valor*5.07; //cotação atual do euro
 	}
 	
 	@Override
