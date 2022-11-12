@@ -8,11 +8,11 @@ public class Menu {
 	private Cofrinho cofrinho;
 	
 	public Menu() {
-		sc = new Scanner(System.in);
-		cofrinho = new Cofrinho();
+		sc = new Scanner(System.in); //comando de entrada de dados
+		cofrinho = new Cofrinho(); 
 	}
 
-	public void exibirMenuPrincipal() {
+	public void exibirMenuPrincipal() { // menu principal
 		System.out.println("COFRINHO:");
 		System.out.println("1-Adicionar moeda: ");
 		System.out.println("2-Remover moeda: ");
@@ -22,7 +22,7 @@ public class Menu {
 
 		String opcaoSelecionada = sc.next();
 		
-		switch (opcaoSelecionada) {
+		switch (opcaoSelecionada) { //switch case para condicições
 		
 			case"0":
 				System.out.println("Operação finalizada");
@@ -56,7 +56,7 @@ public class Menu {
 				break;
 		}
 	}
-	 private void exibirSubMenuAdicionarMoedas() {
+	 private void exibirSubMenuAdicionarMoedas() {  //submenu referente ao requisito de adicionar moeda do cofre
 		System.out.println("Escolha a moeda");
 		System.out.println("1-Real");
 		System.out.println("2-Dolar");
@@ -94,7 +94,7 @@ public class Menu {
 		
 		
 	}
-	 private void exibirSubMenuRemoverMoedas() {
+	 private void exibirSubMenuRemoverMoedas() { //submenu referente ao requisito de remover moeda do cofre
 			System.out.println("Escolha a moeda");
 			System.out.println("1-Real");
 			System.out.println("2-Dolar");
@@ -107,7 +107,7 @@ public class Menu {
 			String valorTextoMoeda = sc.next();
 			
 			
-			valorTextoMoeda = valorTextoMoeda.replace(",", ".");
+			valorTextoMoeda = valorTextoMoeda.replace(",", "."); //subtituição de caracteres/replace
 			double valorMoeda = Double.valueOf(valorTextoMoeda);
 			
 			
@@ -124,7 +124,7 @@ public class Menu {
 				exibirMenuPrincipal();
 			}
 			
-			boolean removeuMoeda = cofrinho.remover(moeda);
+			boolean removeuMoeda = cofrinho.remover(moeda); 
 		
 			if (removeuMoeda){
 				System.out.println("Moeda removida!");
