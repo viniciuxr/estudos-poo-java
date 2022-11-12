@@ -14,7 +14,7 @@ public class Dolar extends Moeda {
 
 
 	public double converter() {
-		return this.valor*5.21;
+		return this.valor*5.21; //cotação atual do dolar
 	}
 	
 	@Override
